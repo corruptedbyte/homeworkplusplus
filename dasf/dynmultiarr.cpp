@@ -160,8 +160,10 @@ int main()
     
     cout << "Enter the number of rows: ";
     cin >> rows;
+    cout << endl;
     cout << "Enter the number of columns: ";
     cin >> cols;
+    cout << endl;
 
     
     cout << "Enter the elements of the matrix:" << endl;
@@ -177,12 +179,12 @@ int main()
     int num0Rows = 3;
     int num0Cols = 3;
 
-    cout << "Original matrix:" << endl;
+    cout << "Original matrix: " << endl;
     print10Matrix(matrix10, num0Rows, num0Cols);
 
     deleteColumn(matrix10, num0Rows, num0Cols, 1);
 
-    cout << "Matrix after deleting column 1:" << endl;
+    cout << "Matrix after deleting column 1: " << endl;
     print10Matrix(matrix10, num0Rows, num0Cols);
 
     int matrix0[MAX_ROWS][MAX_COLS] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
@@ -195,7 +197,7 @@ int main()
     
     rotateRows(matrix0, numRows, numCols, 1, false);
 
-    cout << "Matrix after rotating rows left by 1:" << endl;
+    cout << "Matrix after rotating rows left by 1: " << endl;
     printMatrix(matrix0, numRows, numCols);
 
 }
