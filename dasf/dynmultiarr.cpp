@@ -36,14 +36,6 @@ void addColumn(int** matrix, int numrows, int& numcols, int colposition, int def
 const int MAXROWS = 100;
 const int MAXCOLS = 100;
 
-void print10Matrix(int matrix0[MAXROWS][MAXCOLS], int num0Rows, int num0Cols) {
-    for (int i = 0; i < num0Rows; ++i) {
-        for (int j = 0; j < num0Cols; ++j) {
-            cout << matrix0[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
 void deleteColumn(int matrix0[MAXROWS][MAXCOLS], int& num0Rows, int& num0Cols, int colIndex) {
 
     for (int i = 0; i < num0Rows; ++i) {
@@ -53,6 +45,15 @@ void deleteColumn(int matrix0[MAXROWS][MAXCOLS], int& num0Rows, int& num0Cols, i
     }
 
     num0Cols--;
+}
+
+void print10Matrix(int matrix0[MAXROWS][MAXCOLS], int num0Rows, int num0Cols) {
+    for (int i = 0; i < num0Rows; ++i) {
+        for (int j = 0; j < num0Cols; ++j) {
+            cout << matrix0[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
 
 const int MAX_ROWS = 100;
