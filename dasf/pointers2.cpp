@@ -3,20 +3,20 @@
 using namespace std;
 
 void removeRepeats(int arr[], int& size) {
-    int newSize = 0;
+    int a = 0;
     for (int i = 0; i < size; ++i) {
         bool x = false;
-        for (int j = 0; j < newSize; ++j) {
+        for (int j = 0; j < a; ++j) {
             if (arr[i] == arr[j]) {
                 x = true;
                 break;
             }
         }
         if (!x) {
-            arr[newSize++] = arr[i];
+            arr[a++] = arr[i];
         }
     }
-    size = newSize;
+    size = a;
 }
 
 void task1(int A[], int M, int B[], int N) {
